@@ -31,10 +31,10 @@ optim() fit information:
 	
 regression information:
   * fit$residuals
-  * fit$rss (Residual Sum of Squares)
-  * fit$rmse (Root Mean Square Error)
-  * fit$r2 (R²)
-  * fit$r2_adj (Adjusted R² -- for two free parameters: magnitudes of both slope vectors)
+  * fit$rss = Residual Sum of Squares
+  * fit$rmse = Root Mean Square Error
+  * fit$r2 = R²
+  * fit$r2_adj = Adjusted R² -- for two free parameters: magnitudes of both slope vectors
 
 ## Details
 Splines are used very frequently in computer graphics and for producing interpolations of datasets. Cubic splines are particularly useful in some applications, as they form an interpolation between points. In the case of Cubic Bezier splines where we restrict the slope from (P0,P1) and from (P2,P3) -- equivalent to an Hermite cubic spline from (P0,P1) with slope vectors (m0,m1) where we don't know the magnitude of the slope vector -- this can be used to represent an interpolation between two functions. Cubic Hermite splines are defined on the interval from \[0,1], which can be applied in several dimensions.
